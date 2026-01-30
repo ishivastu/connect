@@ -1,13 +1,12 @@
 import express from 'express';
 import dotenv from 'dotenv';
-dotenv.config();// backend/index.js
+
 import cors from 'cors'
-app.use(cors())
 
-
-
+dotenv.config();// backend/index.js
 
 const app=express();
+app.use(cors())
 const PORT=process.env.PORT;
 
 app.get('/api/health',(req,res)=>{
