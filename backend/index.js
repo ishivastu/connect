@@ -1,6 +1,11 @@
 import express from 'express';
 import dotenv from 'dotenv';
-dotenv.config();
+dotenv.config();// backend/index.js
+import cors from 'cors'
+app.use(cors())
+
+
+
 
 const app=express();
 const PORT=process.env.PORT;
